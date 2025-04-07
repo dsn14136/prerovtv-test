@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Přerovská televize – Live Stream</title>
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+    #my-video {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <video
+    id="my-video"
+    class="video-js vjs-default-skin"
+    controls
+    autoplay
+    preload="auto"
+    data-setup='{}'>
+    <source src="https://173.212.247.21/live/tvprerov.m3u8" type="application/x-mpegURL" />
+    Váš prohlížeč nepodporuje video stream.
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+</body>
+</html>
